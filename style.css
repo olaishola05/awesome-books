@@ -33,3 +33,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.error {
+  visibility: hidden;
+}
+
+.error-message {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: red;
+}

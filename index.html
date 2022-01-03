@@ -10,42 +10,22 @@
   <body>
     <h1>Awesome Books</h1>
 
-    <section>
-      <div class="books">
-        <div class="book-item">
-          <div class="book">
-            <p>Atomic Habit</p>
-            <span>James Clear</span>
-          </div>
-          <button type="button" class="">Remove</button>
-        </div>
-        <hr />
+    <section id="book-container"></section>
+    <br />
 
-        <div class="book-item">
-          <div class="book">
-            <p>Strategies for Success</p>
-            <span>David Abioye</span>
-          </div>
-          <button type="button" class="">Remove</button>
-        </div>
-        <hr />
-      </div>
+    <form action="">
+      <label for="title">
+        <input type="text" name="title" id="title" placeholder="Enter Book Title" />
+      </label>
+      <br />
+      <br />
 
-      <form action="">
-        <label for="title">
-          <input type="text" name="title" id="title" placeholder="Enter Book Title" />
-        </label>
-        <br />
-        <br />
-
-        <label for="author">
-          <input type="text" name="author" id="author" placeholder="Author" />
-        </label>
-        <br />
-        <br />
-        <button type="button" class="formBtn">Add</button>
-      </form>
-    </section>
+      <label for="author">
+        <input type="text" name="author" id="author" placeholder="Author" />
+      </label>
+      <p class="error error-message">Book Title and Author can not be empty</p>
+      <button type="button" class="formBtn">Add</button>
+    </form>
     <script src="./index.js"></script>
   </body>
 </html>
