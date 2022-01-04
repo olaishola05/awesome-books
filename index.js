@@ -54,14 +54,13 @@ const addBook = (book) => {
 
 function removeBook(title) {
   books = JSON.parse(localStorage.getItem('books'));
-  books = books.filter((book) => book.title !== title);
-  console.log(books);
-  localStorage.setItem('books', JSON.stringify(books));
+  localStorage.setItem('books', JSON.stringify(books.filter((book) => book.title !== title)));
   renderBooks();
 }
 
 function removeOnClicked(button) {
   const bookBtns = button.parentElement.children[0].innerHTML;
+  console.log(bookBtns);
   removeBook(bookBtns);
 }
 // const bookBtns = document.querySelectorAll('.book-btns');
