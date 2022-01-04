@@ -73,3 +73,11 @@ function removeOnClicked(button, book) {
 }
 
 formBtn.addEventListener('click', addBook);
+
+// date
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const currentDate = new Date();
+const date = ` ${months[currentDate.getMonth()]} ${currentDate.getDate()} ${currentDate.getFullYear()}`;
+const time = currentDate.toLocaleTimeString();
+const websiteDate = document.querySelector('.date');
+websiteDate.innerHTML = `${date} ${time}`;
