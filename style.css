@@ -4,8 +4,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -36,10 +36,28 @@ img {
 
 .error {
   visibility: hidden;
+  color: red;
 }
 
-.error-message {
-  margin-bottom: 5px;
-  margin-top: 5px;
-  color: red;
+.container {
+  padding: 20px;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0 0 0;
+}
+
+form input[type='text'] {
+  margin-bottom: 10px;
+}
+
+form button {
+  width: 100px;
 }

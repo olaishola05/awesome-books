@@ -4,7 +4,6 @@ const formBtn = document.querySelector('.formBtn');
 const form = document.querySelector('form');
 
 let books = [];
-// localStorage.setItem('books', JSON.stringify(books));
 const setBooks = (book) => {
   books = JSON.parse(localStorage.getItem('books'));
   book = {
@@ -26,7 +25,7 @@ function renderBooks() {
             <p>${books[book].title}</p>
             <span>${books[book].author}</span>
           </div>
-          <button type="button" class="book-btns" book-index="${book}" onclick="removeOnClicked(this)">Remove</button>
+          <button type="button" class="book-btns" onclick="removeOnClicked(this)">Remove</button>
         </div>
         <hr />
          </div>`;
@@ -34,6 +33,7 @@ function renderBooks() {
 
   bookContainer.innerHTML = render;
 }
+
 window.onload = renderBooks();
 
 const addBook = (book) => {
@@ -59,18 +59,10 @@ function removeBook(title) {
   renderBooks();
 }
 
+// eslint-disable-next-line no-unused-vars
 function removeOnClicked(button) {
   const title = button.parentElement.children[0].children[0].innerHTML;
   removeBook(title);
 }
-// const bookBtns = document.querySelectorAll('.book-btns');
-// for (let i = 0; i < bookBtns.length; i += 1) {
-//   bookBtns[i].addEventListener('click', () => {
-//     if (bookBtns[i]) {
-//       removeBook(bookBtns[i]);
-//       console.log(bookBtns[i]);
-//     }
-//   });
-// }
 
 formBtn.addEventListener('click', addBook);
