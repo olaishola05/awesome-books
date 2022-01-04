@@ -5,25 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome books | Book App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <main class="container">
-      <h1>Awesome Books</h1>
+      <h1>All Awesome Books</h1>
       <section id="book-container"></section>
+      <hr class="book-bottom" />
 
-      <form>
-        <label for="title">
-          <input type="text" name="title" id="title" placeholder="Enter Book Title" />
-        </label>
+      <div class="form-container">
+        <h2>Add a new book</h2>
 
-        <label for="author">
-          <input type="text" name="author" id="author" placeholder="Author" />
-        </label>
-        <p class="error">Book Title and Author can not be empty</p>
-        <button type="button" class="formBtn">Add</button>
-      </form>
+        <form>
+          <label for="title">
+            <input type="text" name="title" id="title" placeholder="Title" />
+          </label>
+
+          <label for="author">
+            <input type="text" name="author" id="author" placeholder="Author" />
+          </label>
+          <span class="error">Book Title and Author can not be empty</span>
+          <button type="button" class="formBtn">Add</button>
+        </form>
+      </div>
       <script src="./index.js"></script>
     </main>
   </body>

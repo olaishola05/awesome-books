@@ -1,12 +1,14 @@
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 16px;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body,
@@ -34,9 +36,9 @@ img {
   height: auto;
 }
 
-.error {
-  visibility: hidden;
-  color: red;
+body {
+  max-width: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -45,19 +47,196 @@ img {
 
 .container h1 {
   margin-bottom: 20px;
+  text-align: center;
 }
 
-form {
+#book-container {
+  border-radius: 4px;
+  border: 1px solid gray;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+#book-container .books {
+  width: 100%;
+  padding: 7px;
+}
+
+#book-container .books:nth-child(odd) {
+  background-color: #dddddd;
+}
+
+#book-container .books .book-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#book-container .books .book-btns {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  background-color: #fff;
+  background-image: none;
+  border: 2px solid #000;
+  border-radius: 4px;
+  -webkit-box-shadow: #000 4px 4px 0 0, #fff 4px 4px 0 1px;
+          box-shadow: #000 4px 4px 0 0, #fff 4px 4px 0 1px;
+  color: #000;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 10px;
+  overflow: visible;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-right: 5px;
+}
+
+#book-container .books .book-btns:focus {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+}
+
+#book-container .books .book-btns:hover {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  -webkit-box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+          box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+}
+
+#book-container .books .book-btns:active {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+          box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+#book-container .books .book-btns:not([disabled]):active {
+  -webkit-box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+          box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+}
+
+.book-bottom {
+  width: 15%;
+  border: 1px solid #000;
+}
+
+.form-container {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.form-container h2 {
+  text-align: center;
+}
+
+.form-container form {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
   padding: 10px 0 0 0;
 }
 
-form input[type='text'] {
+.form-container form input[type='text'] {
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  padding: 5px;
+  width: 300px;
+  height: 30px;
+}
+
+.form-container form .error {
+  visibility: hidden;
+  color: red;
+  font-size: 13px;
+}
+
+.form-container form .formBtn {
+  width: 100px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  background-color: #fff;
+  background-image: none;
+  border: 2px solid #000;
+  border-radius: 4px;
+  -webkit-box-shadow: #000 4px 4px 0 0, #fff 4px 4px 0 1px;
+          box-shadow: #000 4px 4px 0 0, #fff 4px 4px 0 1px;
+  color: #000;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 10px;
+  overflow: visible;
+  padding: 10px 10px;
+  text-align: center;
   margin-bottom: 10px;
 }
 
-form button {
-  width: 100px;
+.form-container form .formBtn:focus {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
 }
+
+.form-container form .formBtn:hover {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  -webkit-box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+          box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+}
+
+.form-container form .formBtn:active {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+          box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.form-container form .formBtn:not([disabled]):active {
+  -webkit-box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+          box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+}
+/*# sourceMappingURL=style.css.map */
