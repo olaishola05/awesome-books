@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Awesome books | Book App</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Awesome Books</h1>
 
-    <section id="book-container"></section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awesome books | Book App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Awesome Books</h1>
+
+  <section id="book-container"></section>
+  <br />
+
+  <form action="">
+    <label for="title">
+      <input type="text" name="title" id="title" placeholder="Enter Book Title" />
+    </label>
+    <br />
     <br />
 
-    <form action="">
-      <label for="title">
-        <input type="text" name="title" id="title" placeholder="Enter Book Title" />
-      </label>
-      <br />
-      <br />
+    <label for="author">
+      <input type="text" name="author" id="author" placeholder="Author" />
+    </label>
+    <p class="error error-message">Book Title and Author can not be empty</p>
+    <button type="button" class="formBtn">Add</button>
+  </form>
+  <script src="./index.js"></script>
+</body>
 
-      <label for="author">
-        <input type="text" name="author" id="author" placeholder="Author" />
-      </label>
-      <p class="error error-message">Book Title and Author can not be empty</p>
-      <button type="button" class="formBtn">Add</button>
-    </form>
-    <script src="./index.js"></script>
-  </body>
 </html>

@@ -54,14 +54,14 @@ const addBook = (book) => {
 
 function removeBook(title) {
   books = JSON.parse(localStorage.getItem('books'));
-  localStorage.setItem('books', JSON.stringify(books.filter((book) => book.title !== title)));
+  books = books.filter((book) => book.title !== title);
+  localStorage.setItem('books', JSON.stringify(books));
   renderBooks();
 }
 
 function removeOnClicked(button) {
-  const bookBtns = button.parentElement.children[0].innerHTML;
-  console.log(bookBtns);
-  removeBook(bookBtns);
+  const title = button.parentElement.children[0].children[0].innerHTML;
+  removeBook(title);
 }
 // const bookBtns = document.querySelectorAll('.book-btns');
 // for (let i = 0; i < bookBtns.length; i += 1) {
