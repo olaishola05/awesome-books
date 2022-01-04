@@ -50,7 +50,48 @@ body {
   text-align: center;
 }
 
-#book-container {
+.container .navBar {
+  padding: 0 20px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.container .navBar a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container .navBar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .navBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .navBar ul li {
+  margin: 10px;
+}
+
+.container .date {
+  text-align: right;
+  margin-top: 4px;
+}
+
+.container #book-container {
   border-radius: 4px;
   border: 1px solid gray;
   width: 50%;
@@ -58,16 +99,16 @@ body {
   margin-bottom: 30px;
 }
 
-#book-container .books {
+.container #book-container .books {
   width: 100%;
   padding: 7px;
 }
 
-#book-container .books:nth-child(odd) {
+.container #book-container .books:nth-child(odd) {
   background-color: #dddddd;
 }
 
-#book-container .books .book-item {
+.container #book-container .books .book-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +117,7 @@ body {
           justify-content: space-between;
 }
 
-#book-container .books .book-btns {
+.container #book-container .books .book-btns {
   -webkit-appearance: button;
      -moz-appearance: button;
           appearance: button;
@@ -106,13 +147,13 @@ body {
   margin-right: 5px;
 }
 
-#book-container .books .book-btns:focus {
+.container #book-container .books .book-btns:focus {
   text-decoration: none;
   background: #000;
   color: #fff;
 }
 
-#book-container .books .book-btns:hover {
+.container #book-container .books .book-btns:hover {
   text-decoration: none;
   background: #000;
   color: #fff;
@@ -120,25 +161,25 @@ body {
           box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
 }
 
-#book-container .books .book-btns:active {
+.container #book-container .books .book-btns:active {
   -webkit-box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
           box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
   outline: 0;
 }
 
-#book-container .books .book-btns:not([disabled]):active {
+.container #book-container .books .book-btns:not([disabled]):active {
   -webkit-box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
           box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
   -webkit-transform: translate(2px, 2px);
           transform: translate(2px, 2px);
 }
 
-.book-bottom {
+.container .book-bottom {
   width: 15%;
   border: 1px solid #000;
 }
 
-.form-container {
+.container .form-container {
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,11 +195,11 @@ body {
   padding: 10px;
 }
 
-.form-container h2 {
+.container .form-container h2 {
   text-align: center;
 }
 
-.form-container form {
+.container .form-container form {
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,7 +215,7 @@ body {
   padding: 10px 0 0 0;
 }
 
-.form-container form input[type='text'] {
+.container .form-container form input[type='text'] {
   margin-bottom: 10px;
   border: 1px solid #000;
   border-radius: 2px;
@@ -183,13 +224,13 @@ body {
   height: 30px;
 }
 
-.form-container form .error {
+.container .form-container form .error {
   visibility: hidden;
   color: red;
   font-size: 13px;
 }
 
-.form-container form .formBtn {
+.container .form-container form .formBtn {
   width: 100px;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -213,13 +254,13 @@ body {
   margin-bottom: 10px;
 }
 
-.form-container form .formBtn:focus {
+.container .form-container form .formBtn:focus {
   text-decoration: none;
   background: #000;
   color: #fff;
 }
 
-.form-container form .formBtn:hover {
+.container .form-container form .formBtn:hover {
   text-decoration: none;
   background: #000;
   color: #fff;
@@ -227,16 +268,35 @@ body {
           box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
 }
 
-.form-container form .formBtn:active {
+.container .form-container form .formBtn:active {
   -webkit-box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
           box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
   outline: 0;
 }
 
-.form-container form .formBtn:not([disabled]):active {
+.container .form-container form .formBtn:not([disabled]):active {
   -webkit-box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
           box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
   -webkit-transform: translate(2px, 2px);
           transform: translate(2px, 2px);
+}
+
+.container .contact-container {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.container .contact-container h2 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.container .contact-container p {
+  text-align: center;
+}
+
+.container .contact-container span {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
