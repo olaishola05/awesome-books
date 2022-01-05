@@ -4,7 +4,7 @@ const formBtn = document.querySelector('.formBtn');
 const form = document.querySelector('form');
 
 class Books {
-  constructor(title, author) {
+  constructor(title = null, author = null) {
     this.title = title;
     this.author = author;
     this.books = [];
@@ -24,6 +24,10 @@ class Books {
     // eslint-disable-next-line no-use-before-define
     renderBooks();
   }
+}
+
+if (new Books().books === undefined) {
+  localStorage.setItem('books', JSON.stringify([]));
 }
 
 function renderBooks() {
