@@ -32,7 +32,7 @@ if (JSON.parse(localStorage.getItem('books')) === null) {
 
 function renderBooks() {
   const bookContainer = document.querySelector('#book-container');
-  let books = JSON.parse(localStorage.getItem('books'));
+  const books = JSON.parse(localStorage.getItem('books'));
   let render = '';
   for (let book = 0; book < books.length; book += 1) {
     render += `<div class="books">

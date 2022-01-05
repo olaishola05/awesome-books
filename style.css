@@ -1,6 +1,6 @@
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 16px;
 }
 
@@ -8,7 +8,7 @@ html {
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body,
@@ -64,7 +64,7 @@ body {
 }
 
 #book-container .books:nth-child(odd) {
-  background-color: #dddddd;
+  background-color: #ddd;
 }
 
 #book-container .books .book-item {
@@ -72,20 +72,20 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 #book-container .books .book-btns {
   -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
+  -moz-appearance: button;
+  appearance: button;
   background-color: #fff;
   background-image: none;
   border: 2px solid #000;
   border-radius: 4px;
   -webkit-box-shadow: #000 4px 4px 0 0, #fff 4px 4px 0 1px;
-          box-shadow: #000 4px 4px 0 0, #fff 4px 4px 0 1px;
+  box-shadow: #000 4px 4px 0 0, #fff 4px 4px 0 1px;
   color: #000;
   cursor: pointer;
   font-size: 14px;
@@ -96,11 +96,11 @@ body {
   text-align: center;
   text-transform: none;
   -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   vertical-align: middle;
   white-space: nowrap;
   margin-right: 5px;
@@ -117,20 +117,20 @@ body {
   background: #000;
   color: #fff;
   -webkit-box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
-          box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
 }
 
 #book-container .books .book-btns:active {
   -webkit-box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
-          box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
   outline: 0;
 }
 
 #book-container .books .book-btns:not([disabled]):active {
   -webkit-box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
-          box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
   -webkit-transform: translate(2px, 2px);
-          transform: translate(2px, 2px);
+  transform: translate(2px, 2px);
 }
 
 .book-bottom {
@@ -145,11 +145,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0 auto;
   padding: 10px;
 }
@@ -165,11 +165,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0 auto;
   padding: 10px 0 0 0;
 }
@@ -192,16 +192,16 @@ body {
 .form-container form .formBtn {
   width: 100px;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
+  -moz-appearance: button;
+  appearance: button;
   background-color: #fff;
   background-image: none;
   border: 2px solid #000;
   border-radius: 4px;
   -webkit-box-shadow: #000 4px 4px 0 0, #fff 4px 4px 0 1px;
-          box-shadow: #000 4px 4px 0 0, #fff 4px 4px 0 1px;
+  box-shadow: #000 4px 4px 0 0, #fff 4px 4px 0 1px;
   color: #000;
   cursor: pointer;
   font-size: 14px;
@@ -224,19 +224,18 @@ body {
   background: #000;
   color: #fff;
   -webkit-box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
-          box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
 }
 
 .form-container form .formBtn:active {
   -webkit-box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
-          box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
   outline: 0;
 }
 
 .form-container form .formBtn:not([disabled]):active {
   -webkit-box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
-          box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
   -webkit-transform: translate(2px, 2px);
-          transform: translate(2px, 2px);
+  transform: translate(2px, 2px);
 }
-/*# sourceMappingURL=style.css.map */

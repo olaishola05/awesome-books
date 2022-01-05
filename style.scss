@@ -28,7 +28,7 @@ body {
     padding: 7px;
 
     &:nth-child(odd) {
-      background-color: #dddddd;
+      background-color: #ddd;
     }
 
     .book-item {
@@ -57,6 +57,7 @@ body {
       vertical-align: middle;
       white-space: nowrap;
       margin-right: 5px;
+
       &:focus {
         text-decoration: none;
         background: #000;
