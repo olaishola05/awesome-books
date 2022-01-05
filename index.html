@@ -8,14 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/792c795fd6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <main class="container">
       <nav class="navBar">
-        <a href="#" class="logo">Awesome Books</a>
-        <ul>
+        <div class="mobile">
+          <a href="#" class="logo">Awesome Books</a>
+          <i class="fas fa-bars menubar"></i>
+        </div>
+        <ul class="nav-menu">
+          <li class="close-btn">X</li>
           <li><a href="#" class="books">List</a></li>
           <li><a href="#" class="create">Add new</a></li>
           <li><a href="#" class="contact">Contact</a></li>
@@ -56,7 +61,7 @@
     </main>
     <footer>
       <span>Copyright &copy;</span>
-      <span>Develop by Ola with &hearts;</span>
+      <span>Develop by Ola with <span class="heart">&hearts;</span></span>
     </footer>
     <script src="./index.js"></script>
   </body>
