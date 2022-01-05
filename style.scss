@@ -128,6 +128,7 @@ body {
 
     h2 {
       text-align: center;
+      font-weight: 500;
     }
 
     form {
@@ -201,17 +202,36 @@ body {
   .contact-container {
     width: 80%;
     margin: 0 auto;
-    border: 1px solid #000;
+    margin-bottom: 80px;
 
     h2 {
       margin-bottom: 50px;
       text-align: center;
+      font-weight: 500;
     }
     p {
-      text-align: center;
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
     }
     span {
-      text-align: center;
+      align-items: start;
+      margin-bottom: 20px;
     }
+
+    ul {
+      width: 50%;
+      margin: 0 auto;
+
+      list-style: circle;
+    }
+  }
+
+  footer {
+    border: 1px solid #000;
+    padding: 5px 20px 5px 20px;
+    border-radius: 4px;
   }
 }

@@ -197,6 +197,7 @@ body {
 
 .container .form-container h2 {
   text-align: center;
+  font-weight: 500;
 }
 
 .container .form-container form {
@@ -284,19 +285,46 @@ body {
 .container .contact-container {
   width: 80%;
   margin: 0 auto;
-  border: 1px solid #000;
+  margin-bottom: 80px;
 }
 
 .container .contact-container h2 {
   margin-bottom: 50px;
   text-align: center;
+  font-weight: 500;
 }
 
 .container .contact-container p {
-  text-align: center;
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
 }
 
 .container .contact-container span {
-  text-align: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-bottom: 20px;
+}
+
+.container .contact-container ul {
+  width: 50%;
+  margin: 0 auto;
+  list-style: circle;
+}
+
+.container footer {
+  border: 1px solid #000;
+  padding: 5px 20px 5px 20px;
+  border-radius: 4px;
 }
 /*# sourceMappingURL=style.css.map */
