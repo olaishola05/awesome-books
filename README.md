@@ -3,6 +3,7 @@
 # A book collection app
 
 ![awesome book app](./public/images/awesome.png)
+![awesome book app 2](./public/images/class-refactor.png)
 
 A web application for storing books collection with functionality to add books and remove books.
 
