@@ -26,7 +26,7 @@ class Books {
   }
 }
 
-if (new Books().books === undefined) {
+if (JSON.parse(localStorage.getItem('books')) === undefined) {
   localStorage.setItem('books', JSON.stringify([]));
 }
 
