@@ -83,7 +83,7 @@ body {
 }
 
 .container .navBar ul li {
-  margin: 10px;
+  margin: 5px;
 }
 
 .container .date {
@@ -192,7 +192,21 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  padding: 10px;
+  padding: 10px 0 0 0;
+}
+
+.container .form-container input[type='text'] {
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  padding: 5px;
+  width: 300px;
+  height: 30px;
+}
+
+.container .form-container .error {
+  visibility: hidden;
+  font-size: 13px;
 }
 
 .container .form-container h2 {
@@ -227,7 +241,6 @@ body {
 
 .container .form-container form .error {
   visibility: hidden;
-  color: red;
   font-size: 13px;
 }
 

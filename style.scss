@@ -36,7 +36,7 @@ body {
       display: flex;
 
       li {
-        margin: 10px;
+        margin: 5px;
       }
     }
   }
@@ -124,7 +124,21 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    padding: 10px;
+    padding: 10px 0 0 0;
+
+    input[type='text'] {
+      margin-bottom: 10px;
+      border: 1px solid #000;
+      border-radius: 2px;
+      padding: 5px;
+      width: 300px;
+      height: 30px;
+    }
+
+    .error {
+      visibility: hidden;
+      font-size: 13px;
+    }
 
     h2 {
       text-align: center;
@@ -150,7 +164,6 @@ body {
 
       .error {
         visibility: hidden;
-        color: red;
         font-size: 13px;
       }
 

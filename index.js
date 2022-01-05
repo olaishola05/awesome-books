@@ -4,7 +4,7 @@ const formBtn = document.querySelector('.formBtn');
 const form = document.querySelector('form');
 
 class Books {
-  constructor(title, author) {
+  constructor(title = null, author = null) {
     this.title = title;
     this.author = author;
     this.books = [];
@@ -26,16 +26,20 @@ class Books {
   }
 }
 
+if (JSON.parse(localStorage.getItem('books')) === null) {
+  localStorage.setItem('books', JSON.stringify([]));
+}
+
 function renderBooks() {
   const bookContainer = document.querySelector('#book-container');
-  this.books = JSON.parse(localStorage.getItem('books'));
+  const books = JSON.parse(localStorage.getItem('books'));
   let render = '';
-  for (let book = 0; book < this.books.length; book += 1) {
+  for (let book = 0; book < books.length; book += 1) {
     render += `<div class="books">
         <div class="book-item">
           <div class="book">
-            <span>${this.books[book].title}</span> by
-            <span>${this.books[book].author}</span>
+            <span>${books[book].title}</span> by
+            <span>${books[book].author}</span>
           </div>
           <button type="button" class="book-btns" onclick="removeOnClicked(this)">Remove</button>
         </div>
