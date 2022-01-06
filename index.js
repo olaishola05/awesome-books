@@ -114,29 +114,6 @@ contact.addEventListener('click', () => {
   addNewBook.classList.remove('blue');
 });
 
-// mobile nav
-const hamburger = document.querySelector('.menubar');
-const menu = document.querySelector('.nav-menu');
-const closeBtn = document.querySelector('.close-btn');
-
-const toggleOpen = false;
-const toggleClose = false;
-
-const toggleNavigation = () => {
-  if (toggleOpen === false) {
-    menu.style.visibility = 'visible';
-  }
-};
-
-const closeNavigation = () => {
-  if (toggleClose === false) {
-    menu.style.visibility = 'hidden';
-  }
-};
-
-hamburger.addEventListener('click', toggleNavigation);
-closeBtn.addEventListener('click', closeNavigation);
-
 // date
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const currentDate = new Date();

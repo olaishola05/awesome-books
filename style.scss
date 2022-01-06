@@ -69,7 +69,7 @@ body {
         padding: 7px;
 
         &:nth-child(odd) {
-          background-color: #dddddd;
+          background-color: #ddd;
         }
 
         .book-item {
@@ -98,6 +98,7 @@ body {
           vertical-align: middle;
           white-space: nowrap;
           margin-right: 5px;
+
           &:focus {
             text-decoration: none;
             background: #000;
@@ -127,7 +128,6 @@ body {
 
   .form-container {
     width: 50%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
@@ -232,6 +232,7 @@ body {
       justify-content: center;
       margin: 0 auto;
     }
+
     span {
       align-items: start;
       margin-bottom: 40px;
@@ -240,7 +241,6 @@ body {
     ul {
       width: 50%;
       margin: 0 auto;
-
       list-style: circle;
     }
   }
@@ -269,25 +269,6 @@ footer {
 
     .navBar {
       border: none;
-
-      .mobile {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-      }
-
-      .menubar {
-        display: block !important;
-        align-items: center;
-        font-size: 32px;
-        padding: 10px;
-      }
-
-      .nav-menu {
-        visibility: hidden;
-        display: flex;
-      }
     }
 
     .main-books {
