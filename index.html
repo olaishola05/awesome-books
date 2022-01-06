@@ -8,16 +8,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/792c795fd6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <main class="container">
-      <h1>All Awesome Books</h1>
-      <section id="book-container"></section>
-      <hr class="book-bottom" />
+      <nav class="navBar">
+        <div class="mobile">
+          <a href="#" class="logo">Awesome Books</a>
+          <i class="fas fa-bars menubar"></i>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#" class="books">List</a></li>
+          <li><a href="#" class="create">Add new</a></li>
+          <li><a href="#" class="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="date">Time goes here...</p>
+      <div class="main-books">
+        <h1>All Awesome Books</h1>
+        <section id="book-container"></section>
+      </div>
 
-      <div class="form-container">
+      <section class="form-container">
         <h2>Add a new book</h2>
 
         <form>
@@ -31,8 +45,23 @@
           <span class="error">Book Title and Author can not be empty</span>
           <button type="button" class="formBtn">Add</button>
         </form>
-      </div>
-      <script src="./index.js"></script>
+      </section>
+
+      <section class="contact-container">
+        <h2>Contact Information</h2>
+        <p>Do you have questions or you just want to say "Hello"? <span>You can reach out to us!</span></p>
+
+        <ul>
+          <li>Our e-mail mail@mail.com</li>
+          <li>Our phone number 0002349807</li>
+          <li>Our address: Johnsmith avenue 22, 84503 ring road, Nigeria.</li>
+        </ul>
+      </section>
     </main>
+    <footer>
+      <span>Copyright &copy;</span>
+      <span>Develop by Ola with <span class="heart">&hearts;</span></span>
+    </footer>
+    <script src="./index.js"></script>
   </body>
 </html>

@@ -77,3 +77,47 @@ function removeOnClicked(button, book) {
 }
 
 formBtn.addEventListener('click', addBook);
+
+// navs on clicks
+const bookLists = document.querySelector('.books');
+const addNewBook = document.querySelector('.create');
+const contact = document.querySelector('.contact');
+
+const formContainer = document.querySelector('.form-container');
+const bookContainer = document.querySelector('.main-books');
+const contactContainer = document.querySelector('.contact-container');
+
+bookLists.addEventListener('click', () => {
+  bookContainer.style.display = 'block';
+  formContainer.style.display = 'none';
+  contactContainer.style.display = 'none';
+  bookLists.classList.toggle('blue');
+  addNewBook.classList.remove('blue');
+  contact.classList.remove('blue');
+});
+
+addNewBook.addEventListener('click', () => {
+  formContainer.style.display = 'block';
+  bookContainer.style.display = 'none';
+  contactContainer.style.display = 'none';
+  bookLists.classList.remove('blue');
+  contact.classList.remove('blue');
+  addNewBook.classList.toggle('blue');
+});
+
+contact.addEventListener('click', () => {
+  contactContainer.style.display = 'block';
+  formContainer.style.display = 'none';
+  bookContainer.style.display = 'none';
+  contact.classList.toggle('blue');
+  bookLists.classList.remove('blue');
+  addNewBook.classList.remove('blue');
+});
+
+// date
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const currentDate = new Date();
+const date = ` ${months[currentDate.getMonth()]} ${currentDate.getDate()} ${currentDate.getFullYear()}`;
+const time = currentDate.toLocaleTimeString();
+const websiteDate = document.querySelector('.date');
+websiteDate.innerHTML = `${date} ${time}`;
